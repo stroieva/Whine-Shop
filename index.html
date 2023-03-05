@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Wine Shop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-image" src="images/logo.png" alt="logo">
+                </a>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#home">home</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">wines
+                                <i class="ri-arrow-up-s-line"></i>
+                            </a>
+
+                            <div class="submenu">
+                                <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#wines">red wines
+                                            <span class="submenu__link-arrow">
+                                                <i class="ri-arrow-up-s-line"></i>
+                                            </span>
+                                        </a>
+
+                                        <ul class="submenu__menu-list">
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Pinot Noir</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Cabernet Sauvignon</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Syrah</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Rhone Blends</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Merlot</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Gamay</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#wines">white wines
+                                            <span class="submenu__link-arrow">
+                                                <i class="ri-arrow-up-s-line"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu__menu-list">
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Chardonnay</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Riesling</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Pinot Gris</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Viogneir</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="#wines">others
+                                            <span class="submenu__link-arrow">
+                                                <i class="ri-arrow-up-s-line"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu__menu-list">
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Champagne & Sparkling</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Rose Wine</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Glassware & Accessories</a>
+                                            </li>
+
+                                            <li class="submenu__menu-item">
+                                                <a class="submenu__menu-link" href="#">Wine Tasting Sets</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#shop">shop</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#reviews">customer reviews</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu__icons">
+                        <div class="menu__search-block">
+                            <i class="ri-search-line menu__icon"></i>
+                            <div class="menu__search-widget">
+                                <form class="menu__search" action="#">
+                                    <input class="menu__search-input" type="text" placeholder="Search Your Wine...">
+                                    <button class="menu__search-button">
+                                        <i class="ri-search-line menu__search-icon"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="menu__icon-shop">
+                            <i class="ri-heart-fill menu__icon"></i>
+                            <span id="productLike" class="menu__shop-count">0</span>
+                        </div>
+
+                        <div class="menu__icon-shop">
+                            <a href="cart.html">
+                                <i class="ri-shopping-cart-fill menu__icon"></i>
+                                <span id="productAmount" class="menu__shop-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="header__burger">
+                    <span class="header__burger--line"></span>
+                    <span class="header__burger--line"></span>
+                    <span class="header__burger--line"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="slider" id="home">
+                <div class="swiper swiperBaner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slider-slide"
+                            style="background-image: url(images/slider/slider-image-1.jpg);">
+                            <div class="slider-slide__content">
+                                <h3 class="slider-slide__title">The best collections 2021</h3>
+                                <h2 class="slider-slide__subtitle">Amazing <br> wineshop</h2>
+                                <a class="slider-slide__button" href="#shop">Shop now</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slider-slide"
+                            style="background-image: url(images/slider/slider-image-2.jpg);">
+                            <div class="slider-slide__content">
+                                <h3 class="slider-slide__title">The best collections 2021</h3>
+                                <h2 class="slider-slide__subtitle">Amazing <br> wineshop</h2>
+                                <a class="slider-slide__button" href="#shop">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="advertisement">
+                <div class="advertisement__container">
+                    <div class="advertisement__images">
+                        <a class="advertisement__image" href="#">
+                            <img src="images/advertisement/advertisement-image-1.jpg" alt="advertisement">
+                        </a>
+                    </div>
+
+                    <div class="advertisement__images">
+                        <a class="advertisement__image" href="#">
+                            <img src="images/advertisement/advertisement-image-2.jpg" alt="advertisement">
+                        </a>
+                    </div>
+
+                    <div class="advertisement__images">
+                        <a class="advertisement__image" href="#">
+                            <img src="images/advertisement/advertisement-image-3.jpg" alt="advertisement">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="assortment" id="wines">
+                <div class="assortment__container container">
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-1.png"
+                                        alt="assortment">
+                                    Vintage <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-2.png"
+                                        alt="assortment">
+                                    Red <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-3.png"
+                                        alt="assortment">
+                                    White <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-4.png"
+                                        alt="assortment">
+                                    Rose <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-5.png"
+                                        alt="assortment">
+                                    Non-Vintage <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="assortment__content">
+                        <div class="assortment__item">
+                            <h4 class="assortment__title">
+                                <a class="assortment__link" href="#">
+                                    <img class="assortment__image" src="images/assortments/image-6.png"
+                                        alt="assortment">
+                                    Sparkling <br> Wines
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="baner">
+                <div class="baner__container container">
+                    <div class="baner__content">
+                        <h3 class="baner__title">Hand-Picked <br> <span>Collection</span></h3>
+                        <h4 class="baner__subtitle">Save More, Pour More</h4>
+                        <p class="baner__text">
+                            This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum repudiandae ipsa?
+                            Tempore modi quisquam velit nostrum nulla veritatis tempora quaerat eligendi porro, quos
+                            aperiam. Ea molestias placeat consequuntur fuga.
+                        </p>
+                        <a class="baner__button" href="#shop">Shop now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products" id="shop">
+                <div class="products__container container">
+                    <h3 class="products__title">Featured Products</h3>
+                    <img class="decor" src="images/decor.png" alt="decor">
+
+                    <div class="swiper productSwiper">
+                        <div class="swiper-wrapper products__list"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="review" id="reviews">
+                <div class="review__container container">
+                    <h3 class="review__title">Customer Review</h3>
+                    <img class="decor" src="images/decor.png" alt="decor">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper swiper-container">
+                            <div class="swiper-slide">
+                                <div class="review__slider-container">
+                                    <div class="review__customer-image">
+                                        <img src="images/review/image-1.png" alt="customers">
+                                    </div>
+
+                                    <div class="review__customer-content">
+                                        <p class="review__customer-text">"This is Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Est facilis veritatis ex voluptatibus vel
+                                            alias odio quia. Molestias, aspernatur! Quidem molestiae laudantium
+                                            accusamus dolorum. Possimus veritatis, excepturi sequi repellendus ab beatae
+                                            repudiandae quasi a voluptates ea, doloremque, adipisci est fugit."</p>
+                                        <p class="review__customer-name">Wine Director</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review__slider-container">
+                                    <div class="review__customer-image">
+                                        <img src="images/review/image-2.png" alt="customers">
+                                    </div>
+
+                                    <div class="review__customer-content">
+                                        <p class="review__customer-text">"Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. In, non. Iusto dolorum inventore quasi voluptate aut at
+                                            cupiditate blanditiis minima tempora nisi optio obcaecati veritatis aperiam,
+                                            suscipit doloremque vitae eaque!"</p>
+                                        <p class="review__customer-name">Wine Director</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review__slider-container">
+                                    <div class="review__customer-image">
+                                        <img src="images/review/image-3.png" alt="customers">
+                                    </div>
+
+                                    <div class="review__customer-content">
+                                        <p class="review__customer-text">"Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Qui voluptas repellat ipsam possimus. Commodi, nam odit!
+                                            Dolore doloremque voluptatem corporis, consectetur deserunt porro voluptas
+                                            illo. Porro voluptates eius ut aspernatur.."</p>
+                                        <p class="review__customer-name">Wine Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="blog__container container">
+                    <h3 class="review__title">Latest Blog</h3>
+                    <img class="decor" src="images/decor.png" alt="decor">
+
+                    <div class="blog__block">
+                        <div class="blog__column">
+                            <div class="blog__image">
+                                <img src="images/blog/image-1.jpg" alt="blog">
+                            </div>
+
+                            <div class="blog__content">
+                                <h4 class="blog__title">
+                                    <a class="blog__title-link" href="#">New Wine Shop in your area</a>
+                                </h4>
+                                <p class="blog__data">August 26, 2021</p>
+                                <p class="blog__text">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam minus in commodi illo laboriosam autem.</p>
+                                <a class="blog__link" href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="blog__column blog__column--2">
+                            <div class="blog__content">
+                                <h4 class="blog__title">
+                                    <a class="blog__title-link" href="#">Jack Daniels are one of the best</a>
+                                </h4>
+                                <p class="blog__data">August 26, 2021</p>
+                                <p class="blog__text">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam minus in commodi illo laboriosam autem.</p>
+                                <a class="blog__link" href="#">Read More</a>
+                            </div>
+
+                            <div class="blog__image">
+                                <img src="images/blog/image-2.jpg" alt="blog">
+                            </div>
+                        </div>
+
+                        <div class="blog__column">
+                            <div class="blog__image">
+                                <img src="images/blog/image-3.jpg" alt="blog">
+                            </div>
+
+                            <div class="blog__content">
+                                <h4 class="blog__title">
+                                    <a class="blog__title-link" href="#">New Wine Shop in your area</a>
+                                </h4>
+                                <p class="blog__data">August 26, 2021</p>
+                                <p class="blog__text">This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quisquam minus in commodi illo laboriosam autem.</p>
+                                <a class="blog__link" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter__container container">
+                    <div class="newsletter__content">
+                        <div class="newsletter__info">
+                            <h5 class="newsletter__title">Newsletter</h5>
+                            <p class="newsletter__description">Sign Up to our newsletter and save 20% of on next
+                                purchase</p>
+                        </div>
+
+                        <form class="newsletter__forma" action="#">
+                            <input class="newsletter__input" type="email" placeholder="Email...">
+                            <button class="newsletter__button">Subscribe <i class="ri-mail-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__content">
+                    <div class="footer__block">
+                        <h4 class="footer__title">Company</h4>
+                        <hr class="footer__border">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">About Us</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Contact Us</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Privacy Policy</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Terms & Conditions</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Support Center</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__block">
+                        <h4 class="footer__title">Useful Link</h4>
+                        <hr class="footer__border">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Gift Cards</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Size Chart</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">My Account</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Our Locations</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__block">
+                        <h4 class="footer__title">Questions?</h4>
+                        <hr class="footer__border">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Help Center</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Track Order</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Return</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Shipping Info</a>
+                            </li>
+
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Wishlist</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__block">
+                        <h4 class="footer__title">Connect With Us</h4>
+                        <hr class="footer__border">
+                        <div class="footer__block">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <i class="ri-facebook-circle-fill"></i>
+                                    </a>
+                                </li>
+
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                </li>
+
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <i class="ri-youtube-fill"></i>
+                                    </a>
+                                </li>
+
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <i class="ri-google-fill"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__contact">
+                            <div class="footer__contact-city">
+                                Bengaluru, Karnataka
+                            </div>
+
+                            <div class="footer__contact-email">
+                                <a href="mailto:wine@gmail.com">wine@gmail.com</a>
+                            </div>
+
+                            <div class="footer__contact-phone">
+                                <a href="tel:919898989898">+91-9898989898</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__card">
+                    <ul class="footer__card-list">
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-1.png" alt="card">
+                            </a>
+                        </li>
+
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-2.png" alt="card">
+                            </a>
+                        </li>
+
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-3.png" alt="card">
+                            </a>
+                        </li>
+
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-4.png" alt="card">
+                            </a>
+                        </li>
+
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-5.png" alt="card">
+                            </a>
+                        </li>
+
+                        <li class="footer__card-item">
+                            <a class="footer__card-link" href="#">
+                                <img src="images/card/card-6.png" alt="card">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer__copyright">Wine Shop © 2021. Made with <span class="footer__icon"><i
+                            class="ri-heart-line"></i></span> by Techie Coder</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

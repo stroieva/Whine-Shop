@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Shopping Cart</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a class="header__logo" href="index.html">
+                    <img class="header__logo-image" src="images/logo.png" alt="logo">
+                </a>
+
+                <nav class="menu">                
+                    <div class="menu__icons">
+                        <div class="menu__icon-shop">
+                            <a href="cart.html">
+                                <i class="ri-shopping-cart-fill menu__icon"></i>
+                                <span id="productAmount" class="menu__shop-count">0</span>
+                            </a>                      
+                        </div>                        
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <menu class="main">
+            <section class="wine-store">
+                <div class="wine-store__container container">
+                    <div class="wine-store__price"></div>
+                    <div class="product-cart" id="shopping-cart"></div>
+                </div>
+            </section>             
+        </menu>
+    </div> 
+    <script src="js/cart.js"></script>
+</body>
+</html>
