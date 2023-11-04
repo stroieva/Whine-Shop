@@ -13,12 +13,11 @@ let calculation = () => {
 calculation();
 
 let getProducts = async function () {
-    let obj = await fetch("https://run.mocky.io/v3/e0b3531d-b263-47ef-abaf-3aedbcaf598e");
+    let obj = await fetch("https://run.mocky.io/v3/a7e3b709-d436-4b9b-b079-ce74684dcbb4");
     let array = await obj.json();
 
     let cartItems = () => {
         if (basket.length !== 0) {
-
             shoppingCart.innerHTML = basket.map((x) => {
 
                 let {
@@ -26,8 +25,11 @@ let getProducts = async function () {
                     item
                 } = x;
 
-                let search = array.find((x) => x.id === id) || [];
+                console.log(x)
 
+                let search = array.find((x) => x.id == id) || [];
+
+                console.log(search)
                 let {
                     image,
                     productTitle,

@@ -106,8 +106,8 @@ const sliderProduct = new Swiper(".productSwiper", {
 let list = document.querySelector(".products__list");
 
 async function getProducts() {
-    const obj = await fetch("https://run.mocky.io/v3/e0b3531d-b263-47ef-abaf-3aedbcaf598e");
-    const array = await obj.json();
+    let obj = await fetch("https://run.mocky.io/v3/a7e3b709-d436-4b9b-b079-ce74684dcbb4");
+    let array = await obj.json();
     renderProducts(array);
 }
 
